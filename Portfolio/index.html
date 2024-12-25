@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Anant</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="KH Saad's portfolio website." />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/utils.css" rel="stylesheet" />
+    <link href="css/components/nav.css" rel="stylesheet" />
+    <link href="css/components/home.css" rel="stylesheet" />
+    <link href="css/components/skills.css" rel="stylesheet" />
+    <link href="css/components/projects.css" rel="stylesheet" />
+    <link href="css/components/footer.css" rel="stylesheet" />
+    <!-- scripts -->
+    <script defer src="scripts/mobile_nav.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="desktop container">
+        <a class="logo" href="index.html">AST</a>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+        <button>
+          <a href="./contact.html">Contact</a>
+        </button>
+        <button onclick="appear()" class="icon">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+      <nav class="mobile container hidden">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+        <button onclick="window.location.replace('contact.html');">
+          Contact
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="home container">
+        <div class="hero">
+          <h1>Anant<strong> </strong>Singh</h1>
+          <h3>Frontend Developer</h3>
+        </div>
+        <div class="about">
+          <h3>About me</h3>
+          <p>
+            Hi, Myself Anant.
+            <br />
+            <br />
+            I'm a high schooler from India who is learning to code in 
+            various languages. I'm a weeb and also a tech geek.
+            <br />
+            <br />
+            I'm currently focusing on my studies and also in learning various
+            languages. I like to code in my free time and also I like to play basketball.
+            <br />
+            <br />
+            I do watch alot of anime, and also I listen alot of music.
+          </p>
+        </div>
+      </section>
+      <section id="skills" class="skills container">
+        <div class="main">
+          <h3>Skills</h3>
+          <p>
+            I first started programming in 2021. My first programming language was
+            HTML & Python. Here are the <strong>programming languages</strong> that
+            I've learned till now.
+          </p>
+        </div>
+        <ul>
+          <li>Python</li>
+          <li>Brainfuck</li>
+          <li>Javascript</li>
+          <li>CSS</li>
+          <li>HTML</li>
+        </ul>
+      </section>
+      <section id="projects" class="projects container">
+        <div class="main">
+          <h3>Projects</h3>
+          <p>
+            These are some of my following projects.
+          </p>
+        </div>
+        <div class="list">
+          <div class="box">
+            <a
+              class="projects__link"
+              href="https://github.com/ThatNerdyKun/Arsenic"
+            >
+              <h4>Arsenic</h4>
+              <img src="assets/arsenic.webp" alt="Arsenic" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <button
+          onclick="window.open('https://github.com/ThatNerdyKun');"
+          class="github"
+        >
+          <i class="ri-github-fill"></i>
+        </button>
+        <button
+          onclick="window.open('https://discordapp.com/users/629851641579044874');"
+          class="discord"
+        >
+          <i class="ri-discord-fill"></i>
+        </button>
+        <button
+          onclick="window.open('mailto:sergeantcoders@gmail.com');"
+          class="email"
+        >
+          <i class="ri-mail-open-fill"></i>
+        </button>
+      </div>
+      <p>© 2024 Anant</p>
+    </footer>
+  </body>
+</html>
